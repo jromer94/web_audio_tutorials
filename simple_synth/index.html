@@ -1,0 +1,33 @@
+  <!doctype html>
+  <html>
+    <head>
+      <title>Simple Synth</title>
+      <meta name="description" content="Simple Synth tutorial">
+    </head>
+    <body>
+      <div class="container">
+        <div class="keyboard"></div>
+      </div>
+      <div>
+        <div class="left">
+          <span>
+            Volume:
+          </span>
+          <input
+             type="range"
+             min="0.0"
+             max="1.0"
+             step="0.01"
+             value="0.5"
+             list="volumes"
+             name="volume"
+          />
+          <datalist id="volumes">
+            <option value="0.0" label="Mute"></option>
+            <option value="1.0" label="100%"></option>
+          </datalist>
+        </div>
+      </div>
+    </body>
+  </html>
+
